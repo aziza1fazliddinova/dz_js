@@ -48,7 +48,7 @@ let products = [
         name: "champain",
         type: "alcohol",
         price: 100000
-    },
+    }
 ]
 
 let total = products.reduce((a,b)=>{
@@ -86,10 +86,10 @@ let type = "milk";
 let categoryCount = products.filter(product => product.type === type).length;
 
 let type2 = "alcohol";
-let categoryCount2 = products.filter(product => product.type === type).length;
+let categoryCount2 = products.filter(product => product.type === type2).length;
 
 let type3= "meat";
-let categoryCount3 = products.filter(product => product.type === type).length;
+let categoryCount3 = products.filter(product => product.type === type3).length;
 
 let total2 = products.reduce((a,b)=>{
     return a+b.price
@@ -103,3 +103,5 @@ console.log("Количество алкогольных напитков" + " "
 console.log('Общая сумма мясных продуктов' +' '+categoryNarx2);
 console.log("Количество мясных продуктов" + " " + categoryCount3);
 console.log('Средний прайс всех продуктов'+' ' + total2 / products.length);
+
+
